@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+/* Style for the main container */
+#main_1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Style for the button container */
+.main_2 {
+    text-align: center;
+}
+
+/* Style for the buttons */
+.btn {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+
+

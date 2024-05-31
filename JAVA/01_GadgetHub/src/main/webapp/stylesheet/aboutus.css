@@ -1,0 +1,79 @@
+@charset "ISO-8859-1";
+body {
+    background-color: #f0f0f0; /* Grey background color */
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+.container {
+    margin: 20px 20px 80px 20px;
+    padding: 20px 20px 20px 20px;
+    background-color: grey; /* White background color for content */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for container */
+    width: 70%;
+}
+
+.content {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 2;
+    padding-left: 20px; /* Add space between left and right content */
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+.topic {
+    font-weight: bold;
+}
+
+.icons {
+    text-align: right;
+    padding: 10px;
+}
+
+.icons a {
+    margin-left: 10px;
+    color: #333; /* Default icon color */
+}
+
+.icons a:hover {
+    color: #007bff; /* Icon color on hover */
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input, 
+.input-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.message-box textarea {
+    height: 100px; /* Adjust height of the message box */
+}
+
+.button button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: #0056b3; /* Button color on hover */
+}

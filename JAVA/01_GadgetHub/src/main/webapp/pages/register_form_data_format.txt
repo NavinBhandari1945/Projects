@@ -1,0 +1,94 @@
+  +9234567890123     qwert1234567890       Qwert1234567890@
+
+  +1234567890123   asdfg1234567890  Asdfg1234567890@
+  
+   +223456789012          zxcvb1234567890  Zxcvb1234567890@   
+   
+   
+   
+   
+<img src="${pageContext.request.contextPath}/images/<%=ap_obj.getP_image()%>" width="150px"; height="150px" class="img-thumblin">
+   
+<%@page isELIgnored="false" %>
+<%@page errorPage="error.jsp"%>
+
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/footer.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/admin_header.css">
+
+<%@include file="admin_header.jsp" %>
+<%@include file="footer.jsp" %>
+		
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/admin_header.css">
+   
+   
+   
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/footer.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/header.css">   
+   
+<%@include file="header.jsp" %>
+   
+ <%@include file="footer.jsp" %>
+   
+   
+   
+   <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/footer.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/header.css">
+   
+   
+   DbConnectioin dbconnection_obj=new DbConnectioin();
+   CartModel cart_obj=new CartModel();
+   
+   <%RequiredMethod.showAlertCart(response,"Usere Must Login First", request); %>
+   
+   int userId = -1;
+   HttpSession session_value = request.getSession(false);
+		if (session_value != null) {
+		    Integer userIdObj = (Integer) session_value.getAttribute("userId");
+		    if (userIdObj != null) {
+		        userId = userIdObj.intValue(); // Convert Integer to int
+		    }
+		}
+   
+   
+   	HttpSession session = request.getSession();
+				System.out.println("user sesssion created = userId");
+				session.setAttribute("userId", id_db_int);
+   
+   
+   <%
+
+
+Cookie[] obj=request.getCookies();
+String cookie_obj_name=null;
+if(obj!=null){
+	
+	for (Cookie value:obj){
+		if(value.getName().equals("client_c")) cookie_obj_name=value.getValue();
+	}
+}
+
+
+%>
+   
+   
+   
+   
+   <%-- <%
+if(cookie_obj_name!=null){
+	%>
+	
+		<a href="${pageContext.request.contextPath}/pages/client_profile.jsp">
+			<button class="header_element">user profile page</button>
+		</a>
+	<%
+}
+
+else{
+	%>
+		<a href="${pageContext.request.contextPath}/pages/client_profile.jsp">
+			<button class="header_element">test page</button>
+		</a>
+	<% 
+}
+
+%> --%>

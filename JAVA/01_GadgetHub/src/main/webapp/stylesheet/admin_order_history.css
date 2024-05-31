@@ -1,0 +1,29 @@
+@charset "ISO-8859-1";
+body {
+    font-family: Arial, sans-serif; /* Default font */
+    background-color:azure; /* Background color */
+}
+
+table {
+    width: 90%; /* Adjust width as needed */
+    margin: 20px 20px 80px 20px; /* Center table horizontally */
+    color: white; /* White text color */
+    border-collapse: collapse;
+}
+
+table thead tr th{
+	background-color: green;
+	
+}
+
+table tbody tr td {
+	
+	background-color: grey;
+	
+}
+
+table thead tr th, table tbody tr td {
+    padding: 10px;
+    border: 2px solid red; /* green border */
+    text-align: center; /* Center align text */
+}

@@ -1,0 +1,47 @@
+@charset "ISO-8859-1";
+
+
+body {
+    background-color: #f0f0f0; /* Grey background color */
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+#main_body_01 {
+    max-width: 600px;
+   
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for container */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.product {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color:red; /* Green button color on hover */
+}
+
+
+
+

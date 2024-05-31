@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "53662046734",
+    "project_id": "khadka-mart",
+    "storage_bucket": "khadka-mart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53662046734:android:0ef39290e7c632e91c7a5f",
+        "android_client_info": {
+          "package_name": "com.example.umesh_mart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGdwI6wNovuj60EzmsdsHqyZd3aWzXSio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
