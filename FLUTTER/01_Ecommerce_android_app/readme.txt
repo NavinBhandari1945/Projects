@@ -11,4 +11,5 @@ Features:
 		a.add,remove product
 		b.add,remove offer
 		c.update quantity
+	9.stsate amangement (getx)
 		
