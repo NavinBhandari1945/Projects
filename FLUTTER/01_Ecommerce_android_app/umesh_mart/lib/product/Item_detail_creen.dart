@@ -338,7 +338,9 @@ class _Item_detail_screenState extends State<Item_detail_screen> {
                                     String available_quantity = widget.p_quantity.toString();
                                     double seleect_quantity_1 = double.parse(select_quantity);
                                     double available_quantity_1 = double.parse(available_quantity);
-                                    if(seleect_quantity_1<=available_quantity_1) {
+                                    if(seleect_quantity_1<=available_quantity_1) 
+                                    {
+
                                       Pay_functiion().do_pay(
                                           context: context,
                                           p_url: widget.p_url,
@@ -349,6 +351,8 @@ class _Item_detail_screenState extends State<Item_detail_screen> {
                                           p_description: widget.p_description,
                                           p_quantity:select_quantity_cont.text.toString().trim(),
                                       );
+
+                                      
                                       double decrease_p_q_a_b=double.parse(widget.p_quantity)-seleect_quantity_1;
                                       FirebaseFirestore.instance.collection("Products").doc(widget.p_id).update({
                                         "p_quantity":decrease_p_q_a_b.toString(),

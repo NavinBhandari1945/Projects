@@ -1,0 +1,87 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+#container{
+    margin: 0px 0px;
+    height: 100vh;
+    width: 100vw;
+}
+#id3{
+    text-align: center;
+    color: aliceblue;
+    font-size: 25px;
+    margin-top: 30px;
+}
+#id1{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#id9{
+    color: aliceblue;
+    font-size: 20px;
+}
+.cla_input{
+    width: 300px;
+    height: 23px;
+}
+#id2{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+.cla_img{
+    height: 90px;
+    width: 100px;
+}
+#id6{
+    display: flex;
+    flex-direction: column;
+}
+#id8{
+    color: aliceblue;
+}
+.cla1{
+    margin-right: 50px;
+}
+#id100{
+    height: 30px;
+    width: 90px;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: blueviolet;
+    border-radius: 20px;
+    border: 3px solid red;
+    cursor: pointer;
+}
+#id200{
+    height: 60px;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#id205{
+    display: flex;
+    position: absolute;
+    right: 100px;
+}
+#id201{
+    color: aliceblue;
+    font-size: 20px;
+    position: absolute;
+    left: 100px; 
+}
+.cla211{
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.cla210{
+    margin: 0px 30px;
+    cursor: pointer;
+}

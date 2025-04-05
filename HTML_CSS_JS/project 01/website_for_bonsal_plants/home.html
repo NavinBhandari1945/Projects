@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Navin Bhandari" description="This is the main page of  our website where details of each page is present as well as many different information">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body{
+            margin: 0px 0px;
+        }
+        #id1{
+            margin:0px 0px;
+            /* box-sizing :border-box; makes the container fixed width which doen't change with respect to other */
+            box-sizing: border-box;
+            background-color:black;
+        }
+        #id5{
+            height:50px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color:grey;
+            border: 5px solid red;
+            /* border-radius is used to make given radius  circular */
+            border-radius: 20px;
+            /* display: flex; is used to make container position movable */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly; 
+            /* justify-content: center; It is used to make position of container horizomntally center */
+            /* justify-content: center; 
+            align-items: center;    */
+          
+        }
+        .cla7{
+            background-color:black;
+            color: aliceblue;
+            border: 3px solid blue;
+            border-radius: 20px;
+            margin: 0px 60px;
+            /* text-align: justify; is used to make written text arrange in proper indexing */
+            text-align: center;
+            height: 30px;
+            width: 120px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center; 
+            align-items: center;   
+        }
+        /* #id41{
+            background-color: black;
+            border: 2px solid black;
+        } */
+        #id23{
+            box-sizing: border-box;
+            height: 550px;
+            width: 100%;   
+        }
+        #id500{
+            display: flex;
+            flex-direction: column; 
+            align-items:center;
+        }
+        #id503{
+            height: 200px;
+            width: 500px;
+        }
+        .cla500{
+            margin: 0px 0px;
+        }
+        #id33{
+            color:yellow;
+        }
+
+        #id32{
+            margin-top: 5px;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* align-items: center; is used to make position of items verticallyy center */
+        }
+        .cla34{
+            height: 350px;
+            margin: 0px 10px;
+            width:100%;
+            
+        }
+        #id34{
+           
+            height: 320px;
+            width: 100%;
+            /* background-image: ; is used to put image in background format */
+            background-image: url("homepagephoto/delivery.jpg");
+            /* background-position: ; is used to give position of background image */
+            background-position: center;
+            /* background-repeat: ; is used to make background-image either repeat in x,y direction or non repeatable */
+            background-repeat: no-repeat;
+            /* background-size: ; is used to give height width of background image */
+            background-size:100% 100% ; 
+        }
+        #id37{
+            position: relative;
+            /* position is used to manipulate the location of container */
+            bottom: 14px;
+            height: 320px;
+            width: 100%;
+            background-image: url("homepagephoto/abillion.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:100% 90% ;  
+        }
+        #id38{
+            color: yellow;
+            font-size: 20px; 
+            text-align: center;
+            
+        }
+        #id39{
+            position: relative;
+            bottom: 14px;
+            height: 320px;
+            width: 100%;
+            background-image: url("homepagephoto/award.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:100% 90% ;  
+
+        }
+        #id40{
+            color:yellow;
+            font-size: 20px; 
+            text-align: center;
+        }
+        #id2{
+            margin-top: 200px;
+            margin-bottom:  0px;
+            box-sizing: border-box;
+            width: 100%;
+            height:1200px; 
+        }
+        .cla18{
+            color: white;
+            width: 300px;
+            height: 200px;   
+            text-align: justify;  
+            font-size: 20px;
+        }
+        #id17{
+            float:left;
+            position: relative;
+            top: 45px;
+            left: 30px;
+            
+        }
+        #id18{
+            float: right;
+            position: relative;
+            top: 45px;
+            right: 35px;
+            
+        }
+        #id19{
+            float: left;
+            clear: left;
+            margin:300px 0px;
+            position: relative;
+            bottom: -22px;
+            left: 30px;
+            
+        }
+        #id20{
+            float: right;
+            clear: right;
+            margin:300px 0px;
+            position: relative;
+            bottom: -22px;
+            right: 35px;
+        }
+        #id21{
+            border-radius: 20px;
+            float: left;
+            /* float is also used to manipulate container */
+            clear: left;
+            /* clear is used to  avoid overlapping of container */
+            position: relative;
+            left: 30px;
+            bottom: 56px;
+        }
+        #id25{
+            border-radius: 20px;
+            float: right;
+            clear: right;
+            position: relative;
+            right: 30px;
+            bottom: 56px;
+        }
+        #id24{
+            box-sizing: border-box;
+            margin: 0px 0px;
+            width: 100%;
+            height: 100px;
+            background-color:whitesmoke;
+           border: 5px solid violet;
+            border-radius: 10px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFNABfavgp3psu_xNClQiDrib2HMh7ZWPuJA&usqp=CAU");
+        }
+        #id28{
+            text-decoration: none;
+            /* text-decoration is used to style written text */
+        }
+        #id27{
+            background-color:green;
+            color: red;
+            height: 40px;
+            width: 150px;
+            border-radius:20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #id22{
+            margin: 0px 0px;
+            height: 135px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: brown;
+            color: black;
+            border: 5px solid yellowgreen;
+            border-radius: 10px; 
+            display: flex;
+            flex-direction: row;
+            /* justify-content:space-between; */
+        }
+        .cla29{
+            /* text-align: center; */
+            font-size: 20px;
+            /* margin: 0px 15px; */
+        }
+        #id42{
+            height:1200px;
+            width:400px ;
+            position: absolute;
+            left:36%;  
+            margin: 0px 0px;
+        }
+       .cla43{
+        width: 100%;
+        height:400px;
+        margin: 0px 0px;
+       }
+       .cla46{ 
+        width: 100%;
+        height:280px;
+        margin-bottom: 10px;
+       }
+       .cla47{
+        background-color: blueviolet;
+        height: 40px;
+        width: 80px;
+        border-radius: 20px;
+        cursor: pointer;
+
+       }
+       .cla102{
+        display: flex;
+        justify-content: center;
+       }
+         #id100{
+            color: yellow;
+            font-size: 20px; 
+            text-align: center;
+        } 
+    </style>
+</head>
+<body >
+    <!-- (4 child of body) -->
+    <!-- 1 child container of body -->
+     <header id="id1" class="cla1">
+         <!-- 1 child container of container(id1)-->
+        <nav id="id5" class="cla5">
+                <a href="home.html" id="id11" class="cla7">Home</a>
+                <a href="blog.html" id="id12" class="cla7">Blog</a>
+                <a href="product.html" id="id13" class="cla7">Product</a>
+                <a href="research.html" id="id14" class="cla7">Research</a>
+                <a href="contactus.html" id="id26" class="cla7">Contact us</a>
+        </nav>
+         <!--end of  1 child container of container(id1)-->
+     </header>
+     <!-- end of 1 child container of body(id1) -->
+     <!-- 2 child container of body -->
+     <!-- inline css is used below -->
+     <div id="id41" style="background-color: black;
+     border: 2px solid black;">
+        <!-- (2 child of (id41)) -->
+        <!-- 1st child of container(id41) -->
+        <div id="id23" class="cla23">
+            <!-- (2 child od (id23)) -->
+            <!-- 1 child of container(id23) -->
+            <div id="id500">
+                <div id="id501" class="cla500">
+                    <img id="id503" src="./homepagephoto/logo.jpg" alt="Logo">
+                </div>
+                <div id="id502" class="cla500">
+                    <h1 id="id33" class="cla33">
+                        Garden of Bonsai
+                    </h1>
+                </div>
+                    <!-- end of 2 child container of (id500)(id502) -->
+            </div>
+            
+            <!-- 2 child container of container(id23) -->
+            <div id="id32" class="cla32">
+                <!-- (3 child of (id32)) -->
+                <!-- 1 child container of container(id32) -->
+                <div id="id46" class="cla34">
+                    <div id="id34">
+                        <!-- delivery service image -->
+                    </div>
+                    <div id="id100">
+                        Item at Doorstep
+                    </div>
+
+                </div>
+                <!-- end of 1 child container of container(id32)(id46) -->
+                <!-- 2 child container of container(id32) -->
+                <div id="id35" class="cla34">
+                    <div id="id37">
+                        <!-- plant abillion trees logo -->
+                    </div>
+                    <div id="id38">
+                        Collaboration with Plant Abillion Trees
+                    </div>
+                </div>
+                <!-- end of 2 child container of container(id32)(id35) -->
+                <!-- 3 child container of container(id32) -->
+                <div id="id36" class="cla34">
+                    <div id="id39">
+                        <!-- our echievement image -->
+    
+                    </div>
+                    <div id="id40">
+                        Our achievement
+                    </div>
+                </div>
+                <!-- end of  3 child container of container(id32)(id36) -->
+            </div>
+            <!-- end of 2 child container of container(id23)(id32) -->
+          </div>
+          <!-- end of  1 child of container(id41)(id23) -->
+          <!-- 2nd child of container (id41) -->
+         <main id="id2" class="cla2" >   
+            <!-- (7 child (id2)) -->
+            <!-- 1 child of container (id2) -->
+                <div id="id17" class="cla18">
+                    Home page:
+This is the main page of our website where you can see different links which connect to other pages. It consists of our website name and some pictures to show about us. You are currently at descriptions where you can see the overview of different pages and also final details about us.
+                </div>
+                <!-- end of 1 child of container (id2) (id17) -->
+                <!-- 2 child of container (id2) -->
+                <div id="id18" class="cla18">
+                      
+Blog page:
+Blog page is used to describe mainly about the aspects of technology while mentioning it’s positive and negative effects on our life and current world. We also have mentioned how a bonsai plant business owners have connected with their customers through the use of technology and finally added  a paragraph mentioning the overall conclusion of our page.
+Product:
+                </div>
+               <!-- end of 2 child of container (id2) -->
+               <!-- 3 child of container (id2) -->
+                <div id="id19" class="cla18">
+                    Product page:
+                    Our product page is where customers can find the plant they are looking for. We have a variety of bonsai plants displayed in an organized manner. It is very easy to choose plants based on different categories. At the bottom of the product page, you can find the actual price of those species and their discounts.
+                </div>
+                <!-- end of  3 child of container (id2)(id19) -->
+                 <!-- 4 child of container (id2) -->
+                <div id="id20" class="cla18">
+                    Research page:
+This page is for displaying our reference sources for research. We took help from some places which we have described alongside comparing them with our website. It contains some pros and cons of the source and how we managed to complete our project while keeping them as a reference point.
+                </div>
+                <!-- end of 4 child of container (id2)(id20) -->
+                  <!-- 5 child of container (id2) -->
+                <div id="id21" class="cla18">
+                    About us page:
+On the AboutUs page users can find information about the people that worked together to finish this beautiful project. We have displayed our portfolio which describes us alongside our contacts which others can use to know about us
+                </div>
+                <!-- end of 5 child of container (id2)(id21) -->
+                  <!-- 6 child of container (id2) -->
+                <div id="id25" class="cla18">
+                    Contact us page:
+This is the feedback page for our website as users can find some difficulties or even some suggestions. Here they can enter their information and comments and send them to customer service so that we can solve and use those suggestions to develop our website in a better way
+                </div>
+                <!-- end of 6 child of container (id2)(id25) -->
+                  <!-- 7 child of container (id2) -->
+                <div id="id42">
+                    <div id="id43" class="cla43">
+                        <div id="id101">
+                            <img src="./homepagephoto/bonsai1.jpg" alt="Bonsai Plant" id="id46" class="cla46">
+                        </div>
+                        <!-- <div id="id102" class="cla102">
+                            <button id="id107" class="cla47" onclick="next1()">Next
+                            </button>
+                        </div> -->
+                    </div>
+                    <div id="id44" class="cla43">
+                        <div id="id103">
+                            <img src="./homepagephoto/bonsai10.jpg" alt="Bonsai Plant" id="id47" class="cla46">
+                        </div>
+                        <div id="id104" class="cla102">
+                            <button id="id108" class="cla47" onclick="next2()">Next</button>       
+                        </div>  
+                    </div>
+                    <div id="id45" class="cla43">
+                        <div id="id105">
+                            <img src="./homepagephoto/bonsai4.jpg" alt="Bonsai Plant" id="id48" class="cla46">
+                        </div>
+                        <div id="id106" class="cla102">
+                            <button id="id109" class="cla47" onclick="next3()">Next</button>    
+                        </div>
+                    </div>
+                </div>
+                <!-- end of 7 child of container (id2)(id42) -->
+          </main>
+            <!--end of 2nd child of container (id41)(id2) -->
+        </div>
+         <!-- end of 2 child container of body(id41) -->
+          <!-- 3 child container of body -->
+       <div id="id24" class="cla24">
+           <a href="" id="id28" class="cla28"> 
+            <!-- order is function name -->
+                <button id="id27" class="cla27" onclick="order()">Take Order
+
+                </button>
+           </a>
+       </div>
+       <!-- end of 3 child container of body(id24) -->
+        <!-- 4 child container of body -->
+     <footer id="id22" class="cla22">
+        <!-- (3 child of (id22)) -->
+        <!-- 1 child of container(id22) -->
+        <div id="id29" class="cla29">
+          <pre>
+            Address:Itahrai-16,Labipur
+            West of central mall
+            Nepal
+          </pre>
+
+        </div>
+        <!-- end of 1 child of container(id22)(id29) -->
+         <!-- 2 child of container(id22) -->
+        <div id="id30" class="cla29">
+            <pre>
+            Everyone loves a great garden.
+
+
+                        cpyright©
+            </pre>
+        </div>
+         <!-- end of 2 child of container(id22)(id30) -->
+         <!-- 3 child of container(id22) -->
+        <div id="id31" class="cla29">
+            <pre>
+                E-mail:gardenofbonsai1945@gmail.com 
+                Phone Number:9825324326
+            </pre>
+        </div>
+        <!-- end of 3 child of container(id22)(id31) -->
+     </footer>
+     <!-- end of 4 child container of body(id22) -->
+     <script src="homepage.js"></script>
+    </body>
+    <!-- end of body -->
+</html>

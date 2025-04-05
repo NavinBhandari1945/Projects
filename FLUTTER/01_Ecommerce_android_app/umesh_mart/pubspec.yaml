@@ -31,7 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   esewa_flutter_sdk:
-    path: "/home/navin/WORKPLACE/DISKB/programming/CZ practice/flutter workplace/flutter workplace/payment_fonepay_esewa/eSewa Flutter Sdk 2.1.1_14/esewa_flutter_sdk/"
+    path: ./eSewa Flutter Sdk 2.1.1_14/esewa_flutter_sdk
 
 
   # The following adds the Cupertino Icons font to your application.

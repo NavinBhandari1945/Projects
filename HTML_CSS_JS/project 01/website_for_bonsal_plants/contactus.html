@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Anjan Khadka" description="This page contain interface where client provide his details so that owner contact latter as well as client can give feedback">
+    <title>Contact Us Page</title>
+    <style>
+        body{
+            margin: 0px;
+            background-image: url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        #id1{
+            height: 100%;
+            width: 100%;
+        }
+        #id2{
+            color:blue;
+            font-size: 30px;
+            text-align: center;
+        }
+        #id4{
+            color:blue;
+            font-size: 30px;
+            text-align: center;
+        }
+        #id5{
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+    }
+    .cla7{
+        height: 750px;
+        color: RED;
+        width:300px;
+        margin: 10px 100px;
+        font-size: 30px;
+    }
+    #id7{
+        background-color: blueviolet;
+        height: 40px;
+        width: 70px;
+        border-radius: 15px;
+        border: 3px solid greenyellow;
+    }
+    .any1{
+        height: 25px;
+        width: 300px;
+    }
+    #id47{
+    height:50px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:grey;
+    border: 5px solid red;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+.cla48{
+    background-color:black;
+    color: aliceblue;
+    border: 3px solid blue;
+    border-radius: 20px;
+    margin: 0px 60px;
+    text-align: center;
+    height: 30px;
+    width: 120px;
+    text-decoration: none;
+}   
+    </style>
+</head>
+<body>
+    <div id="id1">
+        <nav id="id47" class="cla47">
+            <a href="home.html" id="id48" class="cla48">Home</a>
+            <a href="blog.html" id="id49" class="cla48">Blog</a>
+            <a href="product.html" id="id50" class="cla48">Product</a>
+            <a href="research.html" id="id51" class="cla48">Research</a>
+            <a href="contactus.html" id="id53" class="cla48">Contact us</a>
+        </nav>
+        <div id="id2">
+            Garden Of Bonsai
+        </div>
+        <div id="id3">
+            <div id="id4">
+              Provide the details Below ,we will contact you later.
+            </div>
+            <div id="id5">
+                <div id="id6" class="cla7">
+                    <form  name="formname" onsubmit="submitit()" >
+                        First Name
+                        <br>
+                        <input type="text" name="fname" id="any1" placeholder="Enter The First Name" class="any1">
+                        <br>
+                        last Name: 
+                        <br>
+                        <input type="text" name="lname" id="any2" placeholder="Enter The Last Name" class="any1">
+                        <br>
+                        Email
+                        <br>
+                        <input type="email" name="email" id="any3" placeholder="Enter The Email" class="any1">
+                        <br>
+                        Address: 
+                        <br>
+                        <input type="text" name="address" id="any4" placeholder="Enter thr address" class="any1">
+                        <br>
+                        Phone Number:
+                        <br>
+                        <input type="number" name="number" id="any5" placeholder="Enter The Phone Number" class="any1">
+                        <br>
+                        <br>
+                        <textarea name="textarea" id="any6" cols="30" rows="10" placeholder="Give Us Feedback"></textarea>
+                        <br>
+                        <br>
+                        <input type="submit" id="id7" name="submit" value="submit"></input>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // submitit is function name 
+            function submitit(){
+                // document.forms is DOM method
+                // formname is value of name attribute of form tag
+            var fname=document.forms["formname"]["fname"].value;
+            var lname=document.forms["formname"]["lname"].value;
+            var phonenumber=document.forms["formname"]["number"].value;
+            var email=document.forms["formname"]["email"].value;
+            var address=document.forms["formname"]["address"].value;
+            var textarea=document.forms["formname"]["textarea"].value;
+            if(fname=="" || lname==""|| phonenumber=="" || email==""|| address==""||textarea=="")
+            {
+                // alert is used to show  crucial pop-up information
+                alert("Please fill all the required details carefully" );
+            }
+            else{
+                alert("Your form is submitted");
+            }
+        };
+    </script>
+</body>
+</html>
